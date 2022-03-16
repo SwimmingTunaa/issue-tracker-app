@@ -1,0 +1,47 @@
+@import "../../Styles/variables.scss";
+
+$red: red;
+* {
+  margin: 0;
+}
+
+form {
+  p {
+    padding-top: 10px;
+  }
+  input {
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+
+  button {
+    color: $lightest-gray;
+    background-color: $accent-color;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+
+.login {
+  background-color: white;
+  border-radius: 20px;
+  justify-self: center;
+  align-self: center;
+  width: 30%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 20px rgba(124, 124, 124, 0.295);
+  justify-content: center;
+  align-items: center;
+}
+
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $lightest-gray;
+}
