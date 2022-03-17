@@ -1,0 +1,12 @@
+.accent-color {
+  color: $accent-color;
+}
+
+.accent-button {
+  color: $lightest-gray;
+  background-color: $accent-color;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+}
