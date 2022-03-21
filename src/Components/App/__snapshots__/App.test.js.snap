@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="login-wrapper"
+  >
+    <div
+      class="login"
+    >
+      <div
+        class="flex-c jcc aic width-100"
+      >
+        <i
+          class="fa-solid fa-5x fa-bug-slash logo"
+        />
+        <h1>
+          Issue Tracker
+        </h1>
+      </div>
+      <form>
+        <label>
+          <i
+            class="fa-solid fa-user"
+          />
+          <input
+            placeholder="Username"
+            type="text"
+          />
+        </label>
+        <label>
+          <i
+            class="fa-solid fa-lock"
+          />
+          <input
+            placeholder="Password"
+            type="password"
+          />
+        </label>
+        <div>
+          <button
+            class="accent-button"
+            type="submit"
+          >
+            Log In
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+</DocumentFragment>
+`;

@@ -12,9 +12,8 @@ export default function useToken()
 
     const saveToken = userToken =>
     {
-        localStorage.setItem('token',  Math.floor(Math.random() * 999999));
-        //if using local server
-        setToken(userToken.token);
+        localStorage.setItem('token', JSON.stringify(userToken));
+        setToken(userToken);
     }
 
     return { setToken: saveToken, token };

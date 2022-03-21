@@ -1,5 +1,6 @@
 @import "../../Styles/variables.scss";
 @import "../../Styles/Globals.scss";
+@import "../../Styles/Helpers.scss";
 
 * {
   margin: 0;
@@ -56,4 +57,11 @@ button {
 h1 {
   width: 70%;
   text-align: center;
+}
+
+.logo {
+  &::before {
+    color: $accent-color;
+  }
+  padding: 20px;
 }

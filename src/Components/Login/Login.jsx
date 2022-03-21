@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Login.scss';
+import axios from 'axios';
 
-async function loginUser(credentials){
+async function loginUser(user){
   
-    return fetch('http://localhost:8080/login', {
-        method: 'POST',
-        headers: {
-            'Content-type': 'application/json'
-        },
-        body: JSON.stringify(credentials)
-    }).then(data => data.json())
-   
+    return axios(
+        {
+            method: "get",
+            user: user,
+            url: "https://swimmingtunaa.github.io/issue-tracker-data/db.json"
+        }
+    )
 }
 
 function Login({setToken})
@@ -22,25 +22,29 @@ function Login({setToken})
     const handleSubmit = async e =>
     {
         e.preventDefault();
-        const token = await loginUser({ username, password });
-        setToken(token); //set oken if using server/API       t 
+        const data = await loginUser({ username, password });  
+        setToken(data.data.token)
     }
 
     return (
         <section className='login-wrapper'>
             <div className='login'>
-                <h1>Issue Tracker</h1>
+                <div className='flex-c jcc aic width-100'>
+                    <i className="fa-solid fa-5x fa-bug-slash logo"></i>
+                    <h1>Issue Tracker</h1>
+                </div>
                 <form onSubmit={handleSubmit} >
                     <label>
-                        <i class="fa-solid fa-user"></i>
+                        <i className="fa-solid fa-user"></i>
                         <input
+                            autoFocus
                             type="text"
                             placeholder='Username'
                             onChange={e => setUsername(e.target.value)}
                         />
                     </label>
                     <label>
-                        <i class="fa-solid fa-lock"></i>
+                        <i className="fa-solid fa-lock"></i>
                         <input
                             type="password"
                             placeholder='Password'
