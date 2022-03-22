@@ -4,7 +4,7 @@ import './Login.scss';
 import axios from 'axios';
 
 async function loginUser(user){
-  
+    
     return axios(
         {
             method: "get",
