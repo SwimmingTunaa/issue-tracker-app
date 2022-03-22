@@ -5,13 +5,17 @@ import axios from 'axios';
 
 async function loginUser(user){
     
-    return axios(
+    return await axios(
         {
-            method: "get",
-            user: user,
-            url: "https://swimmingtunaa.github.io/issue-tracker-data/db.json"
+            method: "post",
+            url: "https://swimmingtuna-issue-tracker.netlify.app/.netlify/functions/data",
+            body: JSON.stringify(user),
+            headers: {
+                'content-type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            }
         }
-    )
+    ).then(res => console.log(res))
 }
 
 function Login({setToken})
