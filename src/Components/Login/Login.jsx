@@ -12,7 +12,7 @@ async function loginUser(user){
             body: JSON.stringify(user),
             headers: {
                 'content-type': 'application/json',
-                'Access-Control-Allow-Origin': '*'
+                'Access-Control-Allow-Origin': '*',
             }
         }
     ).then(res => console.log(res))
@@ -37,7 +37,7 @@ function Login({setToken})
                     <i className="fa-solid fa-5x fa-bug-slash logo"></i>
                     <h1>Issue Tracker</h1>
                 </div>
-                <form onSubmit={handleSubmit} method="POST" data-netlify="true" >
+                <form name='login' onSubmit={handleSubmit} method="POST" data-netlify="true" >
                     <label>
                         <i className="fa-solid fa-user"></i>
                         <input
