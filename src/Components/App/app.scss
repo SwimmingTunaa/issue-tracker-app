@@ -1,7 +1,8 @@
 @import "../../Styles/variables.scss";
 
 .app {
-  background-color: $darkest-gray;
-  width: 100%;
+  background-color: $lightest-gray;
+  margin: auto;
+  justify-self: center;
   height: 100vh;
 }

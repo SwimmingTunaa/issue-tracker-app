@@ -1,0 +1,39 @@
+@import "../../Styles/variables.scss";
+
+.nav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $dark-gray;
+  width: 100%;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: $darkest-gray;
+  }
+  .logo {
+    width: 40%;
+    i {
+      width: 32px;
+      padding: 10px 20px 10px 50px;
+    }
+  }
+}

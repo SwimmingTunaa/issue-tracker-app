@@ -52,16 +52,12 @@ button {
   justify-content: center;
   align-items: center;
   background-color: $lightest-gray;
-}
-
-h1 {
-  width: 70%;
-  text-align: center;
-}
-
-.logo {
-  &::before {
-    color: $accent-color;
+  h1 {
+    width: 70%;
+    text-align: center;
   }
-  padding: 20px;
+
+  .logo {
+    padding: 20px;
+  }
 }
