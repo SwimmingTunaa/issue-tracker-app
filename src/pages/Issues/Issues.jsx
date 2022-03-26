@@ -4,7 +4,7 @@ function Bugs()
 {
     return (
         <h1>
-            Bugs
+            All issues
         </h1>
     )
 }

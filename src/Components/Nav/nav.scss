@@ -1,7 +1,7 @@
 @import "../../Styles/variables.scss";
 
 .nav {
-  position: absolute;
+  color: $lightest-gray;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,20 +20,42 @@
 
   li a {
     display: block;
-    color: white;
+    color: $lightest-gray;
     text-align: center;
     padding: 16px;
+    padding-bottom: 10px;
     text-decoration: none;
   }
 
-  li a:hover {
+  li a:hover,
+  a:focus {
     background-color: $darkest-gray;
   }
+
   .logo {
-    width: 40%;
     i {
       width: 32px;
-      padding: 10px 20px 10px 50px;
+      padding: 0;
+      padding-right: 20px;
+      margin: 0;
+    }
+    padding: 10px 0px 10px 0;
+    margin-left: $page-margin;
+  }
+
+  .links {
+    padding-left: 30px;
+    height: 100%;
+  }
+
+  .user {
+    margin-right: $page-margin;
+    h3 {
+      margin-top: 5px;
+    }
+    img {
+      width: 60px;
+      clip-path: circle(30% at center);
     }
   }
 }
