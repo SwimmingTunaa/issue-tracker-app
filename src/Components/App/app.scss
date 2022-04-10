@@ -1,6 +1,12 @@
 @import "../../Styles/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap");
+
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
 
 .app {
-  background-color: $lightest-gray;
+  background-color: $lightest-blue;
   height: 100vh;
 }

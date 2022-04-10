@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Bugs()
+function Issues()
 {
     return (
         <h1>
@@ -9,4 +9,4 @@ function Bugs()
     )
 }
 
-export default Bugs
+export default Issues

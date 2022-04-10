@@ -12,15 +12,13 @@ async function loginUser(user){
             body: JSON.stringify(user),
         }
     )
-
     console.log(data);
     return data
-    
 }
 
-function Login({setToken})
+function Login({setToken ,username, setUsername})
 {
-    const [username, setUsername] = useState("");
+
     const [password, setPassword] = useState("");
 
     const handleSubmit = async e =>
@@ -37,7 +35,12 @@ function Login({setToken})
                     <i className="fa-solid fa-5x fa-bug-slash logo"></i>
                     <h1>Issue Tracker</h1>
                 </div>
-                <form name='login' onSubmit={handleSubmit} method="POST" data-netlify="true" >
+                <form
+                    name='login'
+                    onSubmit={handleSubmit}
+                    method="POST"
+                    data-netlify="true"
+                >
                     <label>
                         <i className="fa-solid fa-user"></i>
                         <input

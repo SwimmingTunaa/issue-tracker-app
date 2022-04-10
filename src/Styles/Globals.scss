@@ -6,7 +6,7 @@
 
 .color {
   &-lightest-gray {
-    color: $lightest-gray;
+    color: $lightest-blue;
   }
 }
 
@@ -15,7 +15,8 @@
 }
 
 .accent-button {
-  color: $lightest-gray;
+  color: $dark-blue;
+  font-weight: 600;
   background-color: $accent-color;
   border-radius: 20px;
   border: none;
@@ -26,6 +27,6 @@
 
 .logo {
   &::before {
-    color: $accent-color;
+    color: $light-blue;
   }
 }
