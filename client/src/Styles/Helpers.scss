@@ -1,0 +1,34 @@
+.flex {
+  display: flex;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.jcc {
+  justify-content: center;
+}
+.jcsb {
+  justify-content: space-between;
+}
+
+.aic {
+  align-items: center;
+}
+.aifs {
+  align-items: flex-start;
+}
+
+.acc {
+  align-content: center;
+}
+
+.w-100 {
+  width: 100%;
+}

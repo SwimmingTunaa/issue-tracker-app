@@ -1,0 +1,31 @@
+.accent-color {
+  color: #72E793;
+}
+
+.color-lightest-gray {
+  color: #D7F9FF;
+}
+
+.status-red {
+  color: #FFB4B4;
+}
+
+.status-green {
+  color: #ACF4C0;
+}
+
+.accent-button {
+  color: #0E1C36;
+  font-weight: 600;
+  background-color: #72E793;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.logo::before {
+  color: #72E793;
+}
+/*# sourceMappingURL=Globals.css.map */

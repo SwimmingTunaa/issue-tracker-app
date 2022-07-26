@@ -1,0 +1,37 @@
+@import "./variables.scss";
+
+.accent-color {
+  color: $accent-color;
+}
+
+.color {
+  &-lightest-gray {
+    color: $lightest-blue;
+  }
+}
+
+.status{
+  &-red{
+    color: $status-red;
+  }
+  &-green{
+    color: $status-green;
+  }
+}
+
+.accent-button {
+  color: $dark-blue;
+  font-weight: 600;
+  background-color: $accent-color;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.logo {
+  &::before {
+    color: $accent-color;
+  }
+}
